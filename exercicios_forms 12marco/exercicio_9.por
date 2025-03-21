@@ -1,36 +1,42 @@
-programa
-{
-    funcao inicio()
-    {
-        inteiro hamburguer, cheeseburger, fritas, refrigerante, milkshake
-        real total
+programa {
+   inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    inteiro qntdHamb, qntdCheese, qntdFrita, qntdRefri, qntdMilk
+    real vTotal
 
-        escreva("Quantidade de hambuŕrguers: ")
-        leia(hamburguer)
+    // Entrada de dados
+        escreva("Quantidade de Hambúrgueres: ")
+        leia(qntdHamb)
+        
+        escreva("Quantidade de Cheeseburgers: ")
+        leia(qntdCheese)
+        
+        escreva("Quantidade de Fritas: ")
+        leia(qntdFrita)
+        
+        escreva("Quantidade de Refrigerantes: ")
+        leia(qntdRefri)
+        
+        escreva("Quantidade de Milkshakes: ")
+        leia(qntdMilk)
 
-        escreva("Quantidade de cheeseburgers: ")
-        leia(cheeseburger)
+        vTotal = (qntdHamb * 3.00) +
+                (qntdCheese * 2.50) +
+                (qntdFrita * 2.50) +
+                (qntdRefri * 1.00) +
+                (qntdMilk * 3.00)
 
-        escreva("Quantidade de porcoes de fritas: ")
-        leia(fritas)
-
-        escreva("Quantidade de refrigerantes: ")
-        leia(refrigerante)
-
-        escreva("Quantidade de milkshakes: ")
-        leia(milkshake)
-
-        total = hamburguer * 3.00 + cheeseburger * 2.50 + fritas * 2.50 + refrigerante * 1.00 + milkshake * 3.00
-
-        escreva("Total da conta: R$ ",total)
+    // Saída de dados
+        escreva("\nTotal a pagar: R$ ", vTotal)
+  }
 }
-}
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 250; 
+ * @POSICAO-CURSOR = 827; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
