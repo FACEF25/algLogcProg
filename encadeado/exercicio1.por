@@ -3,18 +3,22 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia palavra
+		inteiro num
 
 		
-		escreva ("Digite uma palavra:")
-		leia (palavra)
+		escreva ("Digite um numero:")
+		leia (num)
 
-		se (palavra == "Algoritmo"){
-			escreva( "ALG \n")
-			escreva( "Você acertou a palavra pedida. Parabéns!!!")
+		se (num > 0){
+			escreva( "O numero é positivo!")
 		}
 		senao{
-			escreva( "A palavra digitada não é Algoritmo!")
+			se (num < 0){
+				escreva( "O numero é negativo!")
+			}
+			senao{
+				escreva( "O numero é zero! ")
+			}
 		}
 	}
 }
@@ -23,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 278; 
+ * @POSICAO-CURSOR = 262; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
